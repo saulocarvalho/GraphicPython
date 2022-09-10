@@ -8,11 +8,12 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
 
-        self.setWindowTitle("My First App")
+        self.setWindowTitle("Aula 06")
 
         Widget = QLabel("Pixmap")
         Widget.setPixmap(QPixmap("Ant_1.jpg"))
         Widget.setScaledContents(True)
+
         self.setCentralWidget(Widget)
 
 
