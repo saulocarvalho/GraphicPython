@@ -20,6 +20,8 @@ class MainWindow(QMainWindow):
         self.le.textChanged.connect(self.text_changed)
         self.le.textEdited.connect(self.text_edited)
         
+        self.le.setInputMask('000.000.000-00;_')
+
         self.setCentralWidget(self.le)
     
     def return_pressed(self):
